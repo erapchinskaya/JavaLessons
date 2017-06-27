@@ -9,6 +9,8 @@ import java.awt.event.MouseListener;
 
 /**
  * Реализация взаимодействия с пользователем
+ * Новая игра инициируется в методе initGame()
+ *
  */
 public class GuiAction implements UserAction, ActionListener, MouseListener{
 
@@ -27,7 +29,7 @@ public class GuiAction implements UserAction, ActionListener, MouseListener{
     /** Размер поля по оси*/
     private final int RESOLUTION_Y = 6;
 
-    /** Размер поля по оси*/
+    /** Число бомб*/
     private final int NUM_BOMBS = 9;
 
     /**
@@ -45,18 +47,22 @@ public class GuiAction implements UserAction, ActionListener, MouseListener{
     }
 
     /**
-     * Начинает игру пердавая в доску и в логику объект Enviroment и набор ячеек Cell[][]
+     * Начинает новую игру.
+     * В методе создается объект 'ячеек поля' и объект 'Enviroment' хранящий данные о ходе игры.
+     * Далее эти экземпляры передаются в объекты игровой доски (board) и логики(logic)
+     * В результате внутри (board) и (logic) мы оперируем общими объектами
+     * что позволяет исключить необходимость передачи параметров между (board) и (logic)
      */
     @Override
     public void initGame() {
-        final Cell[][] cells = generator.generate(RESOLUTION_X,RESOLUTION_Y,NUM_BOMBS);
-        final Environment e = new Environment(generator.getNumBombs());
-        this.board.drawBoard(e, cells);
-        this.logic.loadBoard(e, cells);
+        final Cell[][] cells = generator.generate(RESOLUTION_X,RESOLUTION_Y,NUM_BOMBS); //создаем объект ячеек
+        final Environment e = new Environment(generator.getNumBombs()); //создаем переменную для хранения информации о ходе игры
+        this.board.drawBoard(e, cells); //передаем объекты в board и рисуем доску
+        this.logic.loadBoard(e, cells);  //передаем объекты в logic
     }
 
     /**
-     * вызывается при нажатии на ячейку
+     * Вызывается при нажатии на ячейку и обрабатывает действие игрока
      * @param x позиция
      * @param y позиция
      * @param bomb признак того что пользователь отметил ячейку как бомбу
@@ -78,7 +84,7 @@ public class GuiAction implements UserAction, ActionListener, MouseListener{
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        boolean bomb = (e.getButton() == 1) ? false : true;
+        boolean bomb = (e.getButton() != 1);
         this.select(board.getCellOnX(e.getX()),board.getCellOnY(e.getY()), bomb);
         board.repaint();
     }

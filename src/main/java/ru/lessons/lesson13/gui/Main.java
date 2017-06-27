@@ -10,11 +10,11 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 /**
- * Created by User on 11.06.2017.
+ * Класс реализующий запуск Игры
  */
 public class Main {
-    public static final JPanel controlPanel = new JPanel();
-    public static final GuiBoard board = new GuiBoard();
+    private static final JPanel controlPanel = new JPanel();
+    private static final GuiBoard board = new GuiBoard();
 
     public static void main(String[] arg){
         SwingUtilities.invokeLater(new Runnable() {

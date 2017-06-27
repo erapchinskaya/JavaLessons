@@ -116,8 +116,8 @@ public class GuiCell implements Cell<Graphics> {
     @Override
     public Image getFinishImg() {
         Image img = this.getEmptyImg();
-        if (this.isBomb()){
-            img = Toolkit.getDefaultToolkit().getImage(this.PATH+"finishBomb.png");
+        if (this.isBomb() && this.isSuggestBomb()){
+            img = Toolkit.getDefaultToolkit().getImage(this.PATH+"suggestBomb.png");
         }
         return img;
     }

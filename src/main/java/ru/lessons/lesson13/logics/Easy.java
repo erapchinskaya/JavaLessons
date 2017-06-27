@@ -143,7 +143,22 @@ public class Easy implements GameLogic {
         boolean toReturn = false;
         if(numEnclosed == env.getNumBombs()){
             toReturn = true;
+            this.selfSuggest();
         }
         return toReturn;
+    }
+
+    /**
+     * Помечает неотмеченные ячейки с бомбами
+     * Использовано для наглядности внешнего вида
+     */
+    private void selfSuggest(){
+        for (Cell[] row: cells){
+            for (Cell cell: row){
+                if(cell.isBomb() && !cell.isSuggestBomb()){
+                    cell.suggestBomb();
+                }
+            }
+        }
     }
 }
