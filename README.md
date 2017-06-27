@@ -1,5 +1,5 @@
-# Прохождение курса Java 
-[Путь от ученика до эксперта](https://www.youtube.com/playlist?list=PLW8mAQ8rFUhKFkuXDTb3PT1GKz0T-lCv6)
+# Прохождение Обучающего курса Java 
+[Содержание курса](https://www.youtube.com/playlist?list=PLW8mAQ8rFUhKFkuXDTb3PT1GKz0T-lCv6)
 
 ---------------------------------
 Выполненные задания:
