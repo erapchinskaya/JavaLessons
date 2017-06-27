@@ -13,5 +13,6 @@
 <br>
 <p>Не сделано:</p>
 • при нажатии одновременно двух кнопок на ячейке с цифрой, в Windows-сапере открывались все ячейки вокруг нее при условии, что среди них игрок отметил нужное число бомб
+<br>
 
 ![Внешний вид](https://github.com/maks-sl/JavaLessons/blob/master/src/main/java/ru/lessons/lesson13/demo/sapper.png)
