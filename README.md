@@ -23,6 +23,7 @@
 - Игра сапер.
 
 ЗАДАНИЕ: ["Завершить игру сапер реализованную на основе Swing"](https://github.com/maks-sl/JavaLessons/tree/master/src/main/java/ru/lessons/lesson13)
+
 ![Внешний вид](https://github.com/maks-sl/JavaLessons/blob/master/src/main/java/ru/lessons/lesson13/demo/sapper.png)
 
 ---------------------------------
@@ -35,4 +36,5 @@
     - JDBC.
 
 ЗАДАНИЕ: ["Реализовать Web приложение Клиника домашних животных"](https://github.com/maks-sl/JavaPetClinic)
+
 ![Внешний вид](https://github.com/maks-sl/JavaPetClinic/blob/master/demo/view.png)
