@@ -1,4 +1,5 @@
-# Прохождение курса ![Java. Путь от ученика до эксперта](https://www.youtube.com/playlist?list=PLW8mAQ8rFUhKFkuXDTb3PT1GKz0T-lCv6)
+# Прохождение курса Java 
+[Путь от ученика до эксперта](https://www.youtube.com/playlist?list=PLW8mAQ8rFUhKFkuXDTb3PT1GKz0T-lCv6)
 
 ---------------------------------
 Выполненные задания:
@@ -7,22 +8,22 @@
 Занятие 10.
 - Коллекции. List, Set, Map, Tree.
 
-<p>[ЗАДАНИЕ: "Создать свою реализацию коллекций ArrayList и LinkedList"](https://github.com)</p>
+ЗАДАНИЕ: ["Создать свою реализацию коллекций ArrayList и LinkedList"](https://github.com/maks-sl/JavaLessons/tree/master/src/main/java/ru/lessons/lesson10)
 
 ---------------------------------
 
 Занятие 12.
 - Многопоточность.
 
-<p>[ЗАДАНИЕ: "Ознакомление с многопоточностью"](https://github.com)</p>
+ЗАДАНИЕ: ["Ознакомление с многопоточностью"](https://github.com/maks-sl/JavaLessons/tree/master/src/main/java/ru/lessons/lesson12)
 
 ---------------------------------
 
 Занятие 13.
 - Игра сапер.
 
-<p>[ЗАДАНИЕ: "Завершить игру сапер реализованную на основе Swing"](https://github.com)</p>
-![Внешний вид](demo/sapper.png)
+ЗАДАНИЕ: ["Завершить игру сапер реализованную на основе Swing"](https://github.com/maks-sl/JavaLessons/tree/master/src/main/java/ru/lessons/lesson13)
+![Внешний вид](https://github.com/maks-sl/JavaLessons/blob/master/src/main/java/ru/lessons/lesson13/demo/sapper.png)
 
 ---------------------------------
 
@@ -33,40 +34,5 @@
     - SQL.
     - JDBC.
 
-<p>[ЗАДАНИЕ: "Реализовать Web приложение Клиника домашних животных"](https://github.com/maks-sl/JavaPetClinic)</p>
+ЗАДАНИЕ: ["Реализовать Web приложение Клиника домашних животных"](https://github.com/maks-sl/JavaPetClinic)
 ![Внешний вид](https://github.com/maks-sl/JavaPetClinic/blob/master/demo/view.png)
-
-
-
-
-
-
-
-<p>Предназначена для хранения клиентов клиники и их питомцев.
-<br>Доступные виды питомцев: кошка, собака, другое животное.</p>
-<p>Программа позволяет:</p>
-<p>1) Просматривать всех клиентов и их животных</p>
-
-![Внешний вид](demo/view.png)
-
-<p>2) Искать клиентов клиники:
-<br>• по части полного (имя фамилия) имени клиента (без учета регистра букв);
-<br>• по части имени какого-либо из питомцев клиента(без учета регистра букв);
-<br>• по обоим вышеперечисленным признакам с логическим условием ИЛИ либо И;
-
-![Внешний вид](demo/search.png)
-
-<p>3) Добавлять новых клиентов в клинику.
-
-![Внешний вид](demo/addClient.png)
-
-<p>4) Редактировать клиента клиники.
-<br>• изменение данных клиента;
-<br>• удаление клиента из клиники;
-<br>• добавление нового питомца;
-<br>• изменение данных питомца;
-<br>• удаление питомца;
-
-![Внешний вид](demo/clientEdit.png)
-![Внешний вид](demo/addPet.png)
-
