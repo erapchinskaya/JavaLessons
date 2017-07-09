@@ -32,3 +32,16 @@
 ЗАДАНИЕ: ["Реализовать Web приложение Клиника домашних животных"](https://github.com/maks-sl/JavaPetClinic)
 
 ![Внешний вид](https://github.com/maks-sl/JavaPetClinic/blob/master/demo/view.png)
+
+---------------------------------
+
+Занятия 23-27.
+- Проект "Клиника домашних животных"
+    - Spring IoC DI.
+    - HibernateTemplate.
+    - SpringMVC.
+    - Spring-security.
+
+ЗАДАНИЕ: ["Доработать Web приложение Клиника домашних животных с применением вышеописанных технологий"](https://github.com/maks-sl/JavaPetClinic/tree/IocDI%2BHibernateTemplate%2BMVC%2BSecurity)
+
+![Внешний вид](https://github.com/maks-sl/JavaPetClinic/blob/master/demo/addClient.png)
